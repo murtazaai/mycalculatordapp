@@ -1,8 +1,22 @@
 {
+  "name": "mycalculatordapp",
+  "version": "1.0.0",
+  "description": "",  
   "scripts": {
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
     "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:murtazaai/mycalculatordapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/murtazaai/mycalculatordapp/issues"
+  },
+  "homepage": "https://github.com/murtazaai/mycalculatordapp#readme",
   "dependencies": {
     "@coral-xyz/anchor": "^0.30.0",
     "@project-serum/anchor": "^0.26.0",
