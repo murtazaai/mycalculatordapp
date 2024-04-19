@@ -1,8 +1,9 @@
 import assert from 'assert';
 import anchor from '@project-serum/anchor';
-import { SystemProgram } from anchor.web3;
 
 describe('mycalculatordapp', () => {
+  const programId = anchor.web3.SystemProgram.programId;
+
   const provider = anchor.AnchorProvider.local();
 
   anchor.setProvider(provider);
@@ -16,7 +17,7 @@ describe('mycalculatordapp', () => {
       accounts: {
         calculator: calculator.publicKey,
         user: provider.wallet.publicKey,
-        SystemProgram: SystemProgram.programId,
+        SystemProgram: programId,
       },
       signers: [calculator]
     });
